@@ -2,7 +2,7 @@ A = [2, 4, 5, 1, 11, 10, 31, 6, 16, 8]
 
 
 def partition(A, left, right):
-    pivot = A[right]
+    pivot = A[left]
     i = left
     j = right
     print(f'START: i={i}, j={j}, pivot={pivot}, left={left}, right={right}')
