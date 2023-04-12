@@ -10,5 +10,6 @@ def insertion_sort(A):
 
 
 A = [5, 2, 4, 6, 1, 3]
+print(A)
 sorted_arr = insertion_sort(A)
 print(sorted_arr)

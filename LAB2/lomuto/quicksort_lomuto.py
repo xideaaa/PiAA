@@ -19,5 +19,5 @@ def quicksort(A, left, right):
         quicksort(A, q + 1, right)
 
 
-quicksort(A, 0, len(A) - 1)
+quicksort(A, 0, len(A)-1)
 print(A)

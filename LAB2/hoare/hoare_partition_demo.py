@@ -1,4 +1,4 @@
-A = [2, 4, 5, 1, 11, 10, 31, 6, 16, 8]
+A = [8, 4, 5, 1, 11, 10, 31, 6, 16, 2]
 
 
 def partition(A, left, right):
@@ -16,7 +16,7 @@ def partition(A, left, right):
             print(f'RET {j}')
             return j
         A[i], A[j] = A[j], A[i]
-        print(f'SWAP: {A}; i={i}, j={j}, pivot={pivot}, left={left}, right={right}')
+        print(f'SWAP: {A}; i={i}, j={j}, pivot={pivot}, left={left}, right={right}');
 
 
 partition(A, 0, len(A) - 1)
