@@ -8,7 +8,7 @@ def merge(A, left, mid, right):
     i = j = 0
     k = left
     while i < len(L) and j < len(R):
-        if L[i] < R[j]:
+        if L[i] > R[j]:
             A[k] = L[i]
             i += 1
         else:
@@ -35,3 +35,4 @@ def mergesort(A, left, right):
 
 
 mergesort(A, 0, len(A) - 1)
+print(A)
