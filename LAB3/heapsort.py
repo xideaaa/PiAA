@@ -11,7 +11,6 @@ def max_heap(A, n, parent):
 
     if largest != parent:
         A[parent], A[largest] = A[largest], A[parent]
-        print(A)
         max_heap(A, n, largest)
 
 
@@ -19,17 +18,15 @@ def heap_sort(A, n):
     # build max heap
     for i in range(n // 2 - 1, -1, -1):
         max_heap(A, n, i)
-        print(A)
 
     for i in range(n - 1, 0, -1):
         A[i], A[0] = A[0], A[i]
-        print(A)
         max_heap(A, i, 0)
 
     return A
 
 
-A = [5, 13, 2, 25, 7, 17, 20, 8, 4]
+A = [15, 3, 99, 1, 25, 7, 9, 9, 1, 100, 6, 1, 0, 12, 4, 2, 9, 0, 87, 122, 54]
 print(f'Input: {A}')
 heap_sort(A, len(A))
 print(A)
