@@ -45,7 +45,7 @@ def heap_increase_key(A, i, key):
 
 
 def max_heap_insert(A, n, key):
-    A.append(-9999999)
+    A.append(-9999999)  # -inf
     heap_increase_key(A, n + 1, key)
     return A
 
