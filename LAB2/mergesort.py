@@ -35,4 +35,3 @@ def mergesort(A, left, right):
 
 
 mergesort(A, 0, len(A) - 1)
-print(A)
